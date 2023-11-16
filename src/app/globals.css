@@ -1,27 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,600&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+  --primary:#242424;
+  --secondary:#008abc;
+  --primarylight:#464646 ;
+  --secondarylight:#00adec;
+  --primarydark:#151515 ;
+  --secondarydark:#006c93;
+  --primarytext:white;
+  --secondarytext:black;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body,html {
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+input,textarea{
+  border:none;
+  outline: none;
+}
+button{
+  border: none;
+}
+.page
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.textfields
+{
+  display: flex;
+  margin: auto;
+  padding: 25px;
+  flex-direction: row;
+  justify-content: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Note-holder
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid;
+  height: fit-content;
+  width: fit-content;
+  max-width: 350px;
 }
+
+.Form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  border: 1px solid #2499fd;
+  border-radius: 21px;
+  padding: 48px;  
+}
+.Submit-button
+{
+  background-color: #2499fd;
+  color: white;
+  border-radius: 15px;
+}
+
